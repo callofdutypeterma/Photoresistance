@@ -27,7 +27,7 @@
 
     boardReady({board: 'Smart', device: 'yRbex', transport: 'mqtt'}, function (board) {
       board.systemReset();
-      board.samplingInterval = 50;
+      board.samplingInterval = 500;
       photocell = getPhotocell(board, 0);
       photocell.on(function(val){
         photocell.detectedVal = val;
